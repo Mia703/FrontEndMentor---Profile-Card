@@ -1,0 +1,138 @@
+/* =================== index.html =================== */
+
+/* ------------------ headings styles ------------------ */
+body {
+    background-color:  hsl(185, 75%, 39%) ;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+/* ------------------ background images section ------------------ */
+.background-images {
+
+}
+
+.top-circle {
+    position: absolute;
+    display: inline;
+    /* width: 30%; */
+    top: -482px;
+    left: -270px;
+}
+
+.bottom-circle {
+    position: absolute;
+    display: inline;
+    /* width: 30%; */
+    bottom: -630px;
+    right: -213px;
+}
+
+/* ------------------ card body section ------------------ */
+
+/* the whole card */
+.card-body {
+    background-color: white;
+    width: 353px;
+    height: 376px;
+
+    /* places the card at the center of the page */
+    margin: 140px 547px 50px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+    /* used to centre profile picture */
+    position: relative;
+}
+
+/* ------------------ background image section ------------------ */
+.card-background-image img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+/* ------------------ profile image section ------------------ */
+.card-profile-image img {
+    position: absolute;
+    top: 86px;
+    right: 127px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+
+    border-radius: 100%;
+}
+/* ------------------ card name section ------------------ */
+.card-name-section {
+    margin-top: 4rem;
+}
+
+.your-name {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.your-age {
+    font-weight: 400;
+    color: grey;
+}
+
+.your-location {
+    font-weight: 400;
+    color: grey;
+    font-size: 14px;
+    margin-top: 0;
+}
+/* ------------------ horizontal line ------------------ */
+#horizontal-line {
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: rgba(151, 151, 151, 0.2);
+    border-top-width: 1px;
+}
+/* ------------------ information columns section ------------------ */
+.card-info-row {
+    margin-top: 2rem;
+}
+
+.card-info-col {
+    display: inline-block;
+    font-weight: 700;
+
+    /* spacing between items */
+    margin: 0 1rem;
+}
+
+.card-info-col p {
+    /* removes margins around p tags */
+    margin: 0 0 5px 0;
+}
+
+.info-subtitle {
+    font-weight: 400;
+    color: grey;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* ------------------ attribution style ------------------ */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/* =================== responsive edits =================== */
+/* @media screen and () {
+
+} */
