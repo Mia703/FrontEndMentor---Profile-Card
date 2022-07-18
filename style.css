@@ -14,7 +14,7 @@ body {
     /* --------- background images section --------- */
     background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: -270px -482px, 706px 313px;
+    background-position: -70% 130%, 150% -90%;
 
 }
 
@@ -121,21 +121,12 @@ body {
 /* =================== responsive edits =================== */
 
 /* ------------------ mobile phones ------------------ */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     body {
-        background-position: -785px -573px, 85px 224px;
+        background-position: 200% 130%, -100% -90%;
     }
 
     .card-body {
-        /* TODO: change the width and height */
-        width: 353px;
-        
-        height: 376px;
-        margin: 40% 5%;
+        margin: 20% 25%;
     }
-}
-
-/* ------------------ tablets ------------------ */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-    
 }
