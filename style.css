@@ -10,26 +10,12 @@ body {
     padding: 0;
 
     text-align: center;
-}
-/* ------------------ background images section ------------------ */
-.background-images {
 
-}
+    /* --------- background images section --------- */
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -270px -482px, 706px 313px;
 
-.top-circle {
-    position: absolute;
-    display: inline;
-    /* width: 30%; */
-    top: -482px;
-    left: -270px;
-}
-
-.bottom-circle {
-    position: absolute;
-    display: inline;
-    /* width: 30%; */
-    bottom: -630px;
-    right: -213px;
 }
 
 /* ------------------ card body section ------------------ */
