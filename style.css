@@ -1,132 +1,179 @@
-/* =================== index.html =================== */
 
-/* ------------------ headings styles ------------------ */
+/* =================== imported fonts =================== */
+
+/* =================== global variables =================== */
+:root {
+	
+	/* primary colours */
+	--card-colour: white;
+	--card-shadow: rgba(0, 0, 0, 0.2);
+	--text-colour-two: grey;
+	--pri-dark-cyan: hsl(185, 75%, 39%);
+	--pri-v-dark-blue: hsl(229, 23% 23%);
+	--pri-dark-grey-blue: hsl(227, 10%, 46%);
+
+	/* neutral colours */
+	--neu-dark-grey: hsl(0, 0%, 59%);
+}
+
+/* =================== reset default styles =================== */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* =================== base page styles =================== */
 body {
-    background-color:  hsl(185, 75%, 39%) ;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
+	background-color: var(--pri-dark-cyan);
 
-    margin: 0;
-    padding: 0;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 18px;
 
-    text-align: center;
+	text-align: center;
+}
 
-    /* --------- background images section --------- */
-    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: -70% 130%, 150% -90%;
+/* =================== font styles =================== */
+
+/* =================== primary media query =================== */
+
+/* ---------- background ---------- */
+.circles-background {
+	overflow: hidden;
+}
+
+.circles-background img {
+	position: absolute;
+}
+
+#top-circ {
+	top: 0rem;
+	left: 0rem;
 
 }
 
+#bottom-circ {
+	bottom: -35rem;
+	right: -16rem;
+}
 /* ------------------ card body section ------------------ */
 
 /* the whole card */
 .card-body {
-    background-color: white;
-    width: 353px;
-    height: 376px;
+	background-color: var(--card-colour);
+	width: 353px;
+	height: 376px;
 
-    /* places the card at the center of the page */
-    margin: 10% 40% 5%;
+	/* places the card at the center of the page */
+	margin: 10rem auto;
 
-    border-radius: 16px;
+	border-radius: 16px;
 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 var(--card-shadow);
 
-    /* used to centre profile picture */
-    position: relative;
+	/* used to centre profile picture */
+	position: relative;
 }
 
 /* ------------------ background image section ------------------ */
 .card-background-image img {
-    width: 100%;
-    border-radius: 16px 16px 0 0;
+	width: 100%;
+	border-radius: 16px 16px 0 0;
 }
 
 /* ------------------ profile image section ------------------ */
 .card-profile-image img {
-    position: absolute;
-    top: 86px;
-    right: 127px;
+	position: absolute;
+	top: 86px;
+	right: 127px;
 
-    border-style: solid;
-    border-width: 5px;
-    border-color: white;
+	border-style: solid;
+	border-width: 5px;
+	border-color: var(--card-colour);
 
-    border-radius: 100%;
+	border-radius: 100%;
 }
+
 /* ------------------ card name section ------------------ */
 .card-name-section {
-    margin-top: 4rem;
+	margin-top: 4rem;
 }
 
 .your-name {
-    font-weight: 700;
-    margin-bottom: 6px;
+	font-weight: 700;
+	margin-bottom: 6px;
 }
 
 .your-age {
-    font-weight: 400;
-    color: grey;
+	font-weight: 400;
+	color: var(--text-colour-two);
 }
 
 .your-location {
-    font-weight: 400;
-    color: grey;
-    font-size: 14px;
-    margin-top: 0;
+	font-weight: 400;
+	color: var(--text-colour-two);
+	font-size: 14px;
+	margin-top: 0;
 }
+
 /* ------------------ horizontal line ------------------ */
 #horizontal-line {
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-color: rgba(151, 151, 151, 0.2);
-    border-top-width: 1px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-color: rgba(151, 151, 151, 0.2);
+	border-top-width: 1px;
 }
+
 /* ------------------ information columns section ------------------ */
 .card-info-row {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .card-info-col {
-    display: inline-block;
-    font-weight: 700;
+	display: inline-block;
+	font-weight: 700;
 
-    /* spacing between items */
-    margin: 0 1rem;
+	/* spacing between items */
+	margin: 0 1rem;
 }
 
 .card-info-col p {
-    /* removes margins around p tags */
-    margin: 0 0 5px 0;
+	/* removes margins around p tags */
+	margin: 0 0 5px 0;
 }
 
 .info-subtitle {
-    font-weight: 400;
-    color: grey;
-    font-size: 12px;
-    letter-spacing: 2px;
+	font-weight: 400;
+	color: var(--text-colour-two);
+	font-size: 12px;
+	letter-spacing: 2px;
 }
 
 /* ------------------ attribution style ------------------ */
 .attribution {
-    font-size: 11px;
-    text-align: center;
+	font-size: 11px;
+	text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
 }
+
 /* =================== responsive edits =================== */
-
-/* ------------------ mobile phones ------------------ */
-@media only screen and (max-width: 768px) {
-    body {
-        background-position: 200% 130%, -100% -90%;
-    }
-
-    .card-body {
-        margin: 20% 25%;
-    }
+/* tablet */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { }
+/* desktop */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+	#top-circ {
+		top: -29rem;
+		left: -20rem;
+	
+	}
+	
+	#bottom-circ {
+		bottom: -35rem;
+		right: -16rem;
+	}
 }
+/* extra large screens */
+@media only screen and (min-width: 120.063em) { }
